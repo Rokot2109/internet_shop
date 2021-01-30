@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Registration</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css"> 
     <script src="https://kit.fontawesome.com/f70f1848b2.js" crossorigin="anonymous"></script>
@@ -28,63 +28,52 @@
         <nav>
             <div class="navigation-menu">
                 <div class="wrap navigation-menu-wrap ">
-                    <p class="navigation-menu-p">SHOPPING CART</p>
+                    <p class="navigation-menu-p">REGISTRATION</p>
                 </div>
             </div>
         </nav>
-    </section>
-    <section class="Cart">
-        <div class="wrap cart-wrap">
-        <div class="cart-item1">
-            <img src="img/Rectangle16.png" alt="Rectangle">
-            <div class="cart-p">
-                <p>MANGO PEOPLE <br> T-SHIRT</p>
-                <p>Price: <span style="color: #EF5B70">$300</span></p>
-                <p>Color: <span style="color: #6F6E6E">Red</span></p>
-                <p>Size: <span style="color: #6F6E6E">XL</span></p>
-                <p>Quantity:</p>
-                <input type="number">
-            </div>
-            <button><img src="img/buttonX.svg" alt=""></button>
+    <section class="Registration wrap">
+         <div class="wrap Registration-block1">
+             <form action="">
+        <div class="you_name_reg">
+            <p class="nomargin">Your Name</p>
+            <input type="text" id="first_id-cart" placeholder="First Name" class="input-text">
+            <input type="text" id="first_id-cart" placeholder="Last Name" class="input-text">
+        </div>
+        <div class="radio_male_female">
+            <label><input id="radio_male_female_input1" type="radio" name="radio" value="Male" checked>Male</label> 
+            <label><input id="radio_male_female_input2" type="radio" name="radio" value="Female">Female</label>
+        </div>
+        <div class="login_details_reg">
+            <p class="nomargin">Login details</p>
+            <input type="email" id="first_id-cart" placeholder="Email" class="input-text">
+            <input type="password" id="first_id-cart" placeholder="Password" class="input-text">
+        </div>
+        
+        <p class="nomargin Registration-p">Please use 8 or more characters, with at least 1 number and a <br>
+             mixture of uppercase and lowercase letters</p>
+             <form action="">
+                <div class="button-product ">
+                    <input type="submit" class="buttonstyle-product" value=" JOIN NOW "> 
+                </div>
+                </form> 
+        </form>  
+        </div> 
+        <div class="wrap Registration-block2">
+        <div class="goods_details">
+           <p class="nomargin">LOYALTY HAS ITS PERKS</p>
+           <p class="nomargin">Get in on the loyalty program where you can earn points and <br> 
+                unlock serious perks. Starting with these as soon as you join:</p>
+           <ul class="goods_details-ul nomargin">
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>    
+        </div>
     </div>
-        <div class="adress-cart">
-            <form action="" class="form-cart">
-            <p class="nomargin">SHIPPING ADRESS</p>
-            <input type="text" id="first_id-cart" placeholder="Bangladesh" class="input-text">
-            <input type="text" id="second_id-cart" placeholder="State" class="input-text">
-            <input type="text" id="second_id-cart" placeholder="Postcode / Zip" class="input-text1">
-            <button>GET A QUOTE</button>
-        </form>
-        </div>
-        <div class="cart-item2">
-            <img src="img/Rectangle15.png" alt="Rectangle">
-            <div class="cart-p">
-                <p>MANGO PEOPLE <br> T-SHIRT</p>
-                <p>Price: <span style="color: #EF5B70">$300</span></p>
-                <p>Color: <span style="color: #6F6E6E">Red</span></p>
-                <p>Size: <span style="color: #6F6E6E">XL</span></p>
-                <p>Quantity:</p>
-                <input type="number">
-            </div>
-            <button><img src="img/buttonX.svg" alt=""></button>
-        </div>
-        <div class="chekout">
-            <p class="nomargin">SUB TOTAL <span style="padding-left: 25px;">$900</span></p>
-            <p class="nomargin">GRAND TOTAL <span class="chekout-span1">$900</span></p>
-            <hr class="nomargin chekout-hr ">
-            <form action="">
-                <div class="button nomargin">
-                    <input type="submit" class="buttonstyle" value=" PROCEED TO CHECKOUT "> 
-                </div></form>
-            
-        </div>
-        <div class="button-cart">
-         <button>CLEAR SHOPPING CART</button>
-         <button>CONTINUE SHOPPING</button>
-        </div>
-        </div>
     </section>
-
     <section class="feedback">
         <div class="wrap feedback-wrap ">
             <div class="feedback_comments"> <img class="feedback_img" src="./img/Intersect.png" alt="feedback_img">

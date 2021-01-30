@@ -161,6 +161,12 @@ body {
     flex-direction: column;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s; 
+
+}
+.categories_all:hover {
+    transform: scale(1.1);
+    
 }
 
 .categoriesimg2 {
@@ -173,6 +179,7 @@ body {
     flex-direction: column;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s;
 }
 
 .categoriesimg3 {
@@ -185,6 +192,7 @@ body {
     flex-direction: column;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s;
 }
 
 .categoriesimg4 {
@@ -198,6 +206,7 @@ body {
     flex-direction: column;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s;
 }
 
 .categories-p {
@@ -335,12 +344,31 @@ body {
     color: #F26376;
     cursor: pointer;
     user-select: none;
+    transition: 1s;
 }
 
 .buttonstyle:hover {
-    background-color: #F16D7F;
-    color: #FFFFFF;
+    animation: goColor 1s 1;
 }
+@keyframes goColor {
+    0% {
+      background-color: #F16D7F;
+    }
+    30% {
+      background-color: #F16D7F;
+    }
+    60% {
+      background-color: #F16D7F;
+    }
+    
+    90% {
+        color: #FFFFFF;
+    }
+    100% {
+        transform:rotate(180deg);
+        
+    }
+  }
 
 .advantages {
     background: #222224;
@@ -714,10 +742,11 @@ details {
     margin-top: 16px;
 }
 
-li {
+.navigation-menu-li {
     list-style-type: none;
     display: inline-block;
 }
+
 
 .tovar-filter {
     display: flex;
@@ -766,7 +795,9 @@ li {
     padding: 0;
     margin: 0;
 }
-
+.pagination-nav li{
+    list-style-type: none;
+}
 .pagination-nav {
     border-radius: 3px;
     border: solid 1px #ececec;
@@ -944,18 +975,24 @@ li {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
-    background: #FFFFFF url(/img/basket.svg)no-repeat left;
+    line-height: 19pbuttonstylex;
+    background: #FFFFFF url(../img/basket.svg)no-repeat left;
     background-position: 24px;
     border: 1px solid #FF6A6A;
     color: #F26376;
     cursor: pointer;
     user-select: none;
+    transition: 1s;
+     
+    
 }
 .buttonstyle-product:hover {
-    background: #F16D7F url(/img/basket_white.svg)no-repeat left;
+    background: #F16D7F url(../img/basket_white.svg)no-repeat left;
     background-position: 24px;
     color: #FFFFFF;
+    transform: rotate(360deg);
+    
+
 
 }
 .product-wrap-product {
@@ -1033,6 +1070,11 @@ li {
     padding-left: 39px;
     padding-right: 41px;
     outline: none;
+    transition: 0.4s;
+}
+.button-cart button:hover {
+    transform: scale(1.1);
+    background: #cbcecd;
 }
 
 .cart-p input {
@@ -1132,8 +1174,10 @@ li {
     display: none;
   }
   .form-cart{
+    height: 272px;  
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content: space-between; 
   }
   .form-cart p {
     font-family: Lato;
@@ -1141,7 +1185,6 @@ li {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 20px;
     color: #222222;
     
   }
@@ -1150,18 +1193,16 @@ li {
       padding-top: 13px;
       padding-bottom: 16px;
       padding-left: 17.24px;
-      margin-bottom: 20px;
       height: 45px;
-      border: 1px solid #E2E2E2;
+      border: 1px solid #A4A4A4;
       outline: none;
   }
   .input-text1 {
     padding-top: 13px;
     padding-bottom: 16px;
     padding-left: 17.24px;
-    margin-bottom: 23px;
     height: 45px;
-    border: 1px solid #E2E2E2;
+    border: 1px solid #A4A4A4;
     outline: none;
 }
 .form-cart button {
@@ -1174,10 +1215,16 @@ li {
     color: #5f5f5f;
     height: 35px;
     width: 101.41px;
-    border: 1px solid #E2E2E2;
+    border: 1px solid #A4A4A4;
     outline: none;
     background: none;
     cursor: pointer;
+    transition: 0.4s;
+}
+
+.form-cart button:hover {
+    transform: scale(1.1);
+    background: #cbcecd;
 }
 
  #first_id-cart::placeholder  {
@@ -1243,3 +1290,142 @@ li {
         line-height: 19px;
         color: #F16D7F;
     }   
+/* начало страницы регистрация */
+
+.you_name_reg {
+    width: 360px;
+    height: 149px;
+    margin-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.you_name_reg p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.login_details_reg {
+    width: 360px;
+    height: 149px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login_details_reg p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.radio_male_female {
+    width: 132px;
+    height: 17px;
+    margin-bottom: 33px;
+    display: flex;
+    
+}
+.radio_male_female label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    align-items: center;
+    display: flex;
+}
+#radio_male_female_input1 {
+    margin: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+#radio_male_female_input2 {
+    margin: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.Registration-p {
+    margin-bottom: 39px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+.goods_details {
+    width: 652px;
+    height: 334px;
+}
+.Registration {
+    display: flex;
+}
+.Registration-block1 {
+    margin-top: 64px;
+}
+.Registration-block2 {
+    margin-top: 64px;
+}
+
+.Registration .buttonstyle-product {
+    width: 167px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-left: 29px;
+    background:  #FFFFFF url(../img/arrow_pink.svg) no-repeat right;
+    background-position: 121px;
+    margin-bottom: 96px;
+}
+.Registration .buttonstyle-product:hover {
+    background: #F16D7F url(../img/arrow_white.svg) no-repeat right;
+    background-position: 121px;
+    
+}
+
+.goods_details p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+/* identical to box height */
+    color: #000000;
+    margin-bottom: 22px;
+}
+
+.goods_details ul {
+    padding-left: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+/* identical to box height */
+    color: #000000;
+    
+}
+
+.goods_details li::marker {
+    content:  url(../img/galka_ul.svg);
+    
+}
+.goods_details li {
+    padding-left: 22px;
+}
