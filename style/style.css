@@ -1075,6 +1075,61 @@ a {
   display: none;
 }
 
+.tovar-filter-details {
+  position: relative;
+}
+
+.tovar-filter-spisok {
+  width: 100px;
+  background: chartreuse;
+  position: absolute;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tovar-filter-spisok input {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tovar-filter-spisok label {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 9px;
+}
+
+.label-chekbox {
+  width: 100px;
+  background: chartreuse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+
+.tovar-filter-spisok .label-chekbox:nth-child(4) {
+  padding-bottom: 5px;
+}
+
+.tovar-filter-details[open] > .tovar-filter-spisok {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
 .tovar-filter {
   display: -webkit-box;
   display: -ms-flexbox;

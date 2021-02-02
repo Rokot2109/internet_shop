@@ -833,6 +833,48 @@ a {
 .tovar-filter-details ::-webkit-details-marker {
     display: none;
 }
+.tovar-filter-details {
+    position: relative;   
+}
+.tovar-filter-spisok {
+    
+    width: 100px;
+    background: chartreuse;
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tovar-filter-spisok input {
+    margin: 0;
+    display: flex;
+    
+}
+.tovar-filter-spisok label {
+    margin: 0;
+    display: flex;
+    margin-left: 9px;
+}
+
+
+.label-chekbox {
+    width: 100px;
+    background: chartreuse;
+    display: flex;
+    align-items: center;
+    padding-left: 9px;
+    padding-top: 5px;
+}
+
+
+.tovar-filter-spisok .label-chekbox:nth-child(4) {
+    padding-bottom: 5px;
+}
+
+
+.tovar-filter-details[open]> .tovar-filter-spisok {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
 
 .tovar-filter {
     display: flex;
