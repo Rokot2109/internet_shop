@@ -700,6 +700,8 @@ a {
 .nav-menu {
     margin-top: 51px;
     box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
     
     
         
@@ -828,7 +830,9 @@ a {
     list-style-type: none;
     display: inline-block;
 }
-
+.tovar-filter-details ::-webkit-details-marker {
+    display: none;
+}
 
 .tovar-filter {
     display: flex;
@@ -848,12 +852,16 @@ a {
     color: #6F6E6E;
     cursor: pointer;
 }
+.tovar-filter-details:nth-child(2) {
+    padding-left: 27.98px;
+    padding-right: 27.98px;
+}
 
 .tovar-filter-summary:after {
     content: url(../img/strelka_details.svg);
     padding-left: 10px;
-    margin-right: 27.98px;
 }
+
 
 .product-wrap-catalog {
     display: flex;
