@@ -47,7 +47,7 @@
             </ul>
         </details>
     </details>
-    <button class="menu-close-btn">X</button>
+    <button class="menu-close-btn"><img class="menu-close-btn-img" src="img/buttonX.svg" alt="buttonX"></button>
             </div>
                 
                 
@@ -233,6 +233,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector(".burger").onclick = function() {
+ document.querySelector(".overlay").classList.add("overlay-open");
+}
+
+document.querySelector(".menu-close-btn").onclick = function() {
+ document.querySelector(".overlay").classList.remove("overlay-open");
+}
+    </script>
 </body>
 
 </html>
