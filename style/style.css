@@ -1359,7 +1359,7 @@ input[type="checkbox"] {
 }
 
 /* стили для метки */
-label {
+.label-filter {
   color: #000;
   cursor: default;
   font-weight: normal;
@@ -1371,10 +1371,13 @@ label {
   color: #6F6E6E;
   padding: 0;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
 }
 
-label:before {
+.label-filter:before {
   content: "";
   color: #000;
   display: inline-block;

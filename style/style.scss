@@ -1075,11 +1075,11 @@ a {
 
 /* прячем input checkbox */
 input[type="checkbox"] {
-    display: none;
-
+    display: none; 
   }
+
 /* стили для метки */
-label {
+.label-filter {
     color: #000;
     cursor: default;
     font-weight: normal;
@@ -1090,11 +1090,12 @@ label {
     line-height: 16px;
     color: #6F6E6E;
     padding: 0;
-    vertical-align: middle; 
+    vertical-align: middle;
+    display: flex; 
     cursor: pointer;
 }
 
-label:before {
+.label-filter:before {
     content: "";
     color: #000;
     display: inline-block;
