@@ -410,7 +410,50 @@ body {
 .productsimg-flex {
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
+    overflow: hidden;
+    min-height: 421px;
+    width: 360px;
+    cursor: pointer;
 }
+.productsimg-flex:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+  }
+  .btn {
+      cursor: pointer;
+      width: 139px;
+      height: 44px;
+      background: url(../img/basket_for_cart.svg) no-repeat left;
+      background-position: 13.54px;
+      outline: none;
+      border: 1px solid #fff;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+/* identical to box height */
+      color: #FFFFFF;
+      padding-left: 31.05px;
+  }
+  .overlay-btn {
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .productsimg-flex:hover .overlay-btn {
+    opacity: 1;
+    
+  }
+  
 
 .promo-categories-p {
     width: 360px;
@@ -844,13 +887,13 @@ a {
 // выпадающий список фильтр 
 
 .nav-menu {
+    position: relative;
     margin-top: 51px;
     box-sizing: border-box;
     display: flex;
     justify-content:space-between;
-    
-    
-        
+    margin-bottom: 64px;
+    z-index: 100;      
 }
 
 .details-FILTER ::-webkit-details-marker {
@@ -859,10 +902,7 @@ a {
 
 .details-FILTER {
     box-sizing: border-box;
-    width: 360px;
-    
-    
-    
+    width: 360px;   
 }
 .details-FILTER[open] {
     padding-left: 16px;
