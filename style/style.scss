@@ -830,6 +830,7 @@ a {
     list-style-type: none;
     display: inline-block;
 }
+// начало фильтр выбора товара
 .tovar-filter-details ::-webkit-details-marker {
     display: none;
 }
@@ -846,6 +847,27 @@ a {
     display: flex;
     flex-direction: column;
 }
+.tovar-filter-spisok-size {
+    
+    width: 79px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 19px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.tovar-filter-spisok-price {
+    
+    width: 100px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 13px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
 .tovar-filter-spisok input {
     margin: 0;
     display: flex;
@@ -857,8 +879,8 @@ a {
 }
 
 
-.label-chekbox {
-    width: 100px;
+.tovar-filter-spisok-size .label-chekbox {
+    width: 79px;
     background: #FFFFFF;
     display: flex;
     align-items: center;
@@ -883,6 +905,7 @@ label {
     color: #6F6E6E;
     padding: 0;
     vertical-align: middle; 
+    cursor: pointer;
 }
 
 label:before {
@@ -914,14 +937,26 @@ label:before {
     background: #eee;
     color: #aaa;
    }
-   
+  
 .tovar-filter-spisok .label-chekbox:nth-child(1) {
-    margin-top: 9px;
-    
+    margin-top: 9px;   
+}
+.tovar-filter-spisok-size .label-chekbox:nth-child(1) {
+    margin-top: 9px;   
+}
+.tovar-filter-spisok-price .label-chekbox:nth-child(1) {
+    margin-top: 9px;   
 }
 
 
+
 .tovar-filter-details[open]> .tovar-filter-spisok {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.tovar-filter-details[open]> .tovar-filter-spisok-size {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.tovar-filter-details[open]> .tovar-filter-spisok-price {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
@@ -929,6 +964,7 @@ label:before {
     display: flex;
     justify-content: center;
     height: 17px;
+    outline: none;
 }
 
 
@@ -942,6 +978,7 @@ label:before {
     /* identical to box height */
     color: #6F6E6E;
     cursor: pointer;
+    outline: none;
 }
 .tovar-filter-details:nth-child(2) {
     padding-left: 27.98px;
@@ -952,6 +989,7 @@ label:before {
     content: url(../img/strelka_details.svg);
     padding-left: 10px;
 }
+// конец фильтр выбора товара
 
 
 .product-wrap-catalog {

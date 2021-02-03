@@ -1094,6 +1094,36 @@ a {
           flex-direction: column;
 }
 
+.tovar-filter-spisok-size {
+  width: 79px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 19px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tovar-filter-spisok-price {
+  width: 100px;
+  background: #FFFFFF;
+  position: absolute;
+  left: 13px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .tovar-filter-spisok input {
   margin: 0;
   display: -webkit-box;
@@ -1108,8 +1138,8 @@ a {
   display: flex;
 }
 
-.label-chekbox {
-  width: 100px;
+.tovar-filter-spisok-size .label-chekbox {
+  width: 79px;
   background: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,6 +1167,7 @@ label {
   color: #6F6E6E;
   padding: 0;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 label:before {
@@ -1174,7 +1205,25 @@ input:disabled + label:before {
   margin-top: 9px;
 }
 
+.tovar-filter-spisok-size .label-chekbox:nth-child(1) {
+  margin-top: 9px;
+}
+
+.tovar-filter-spisok-price .label-chekbox:nth-child(1) {
+  margin-top: 9px;
+}
+
 .tovar-filter-details[open] > .tovar-filter-spisok {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.tovar-filter-details[open] > .tovar-filter-spisok-size {
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.tovar-filter-details[open] > .tovar-filter-spisok-price {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -1187,6 +1236,7 @@ input:disabled + label:before {
       -ms-flex-pack: center;
           justify-content: center;
   height: 17px;
+  outline: none;
 }
 
 .tovar-filter-summary {
@@ -1198,6 +1248,7 @@ input:disabled + label:before {
   /* identical to box height */
   color: #6F6E6E;
   cursor: pointer;
+  outline: none;
 }
 
 .tovar-filter-details:nth-child(2) {
