@@ -1382,7 +1382,7 @@ label:before {
     color: #F26376;
     cursor: pointer;
     user-select: none;
-    transition: 1s;
+    transition: 0.5s;
      
     
 }
@@ -1390,10 +1390,23 @@ label:before {
     background: #F16D7F url(../img/basket_white.svg)no-repeat left;
     background-position: 24px;
     color: #FFFFFF;
-    transform: rotate(360deg);
-    
+}
 
+.position-product-filter {
+    left: 45px;
+}
 
+.label-chekbox .checkbox-id13 {
+    color: red;
+}
+.label-chekbox .checkbox-id14 {
+    color: green;
+}
+.label-chekbox .checkbox-id15 {
+    color: black;
+}
+.label-chekbox .checkbox-id16 {
+    color: blue;
 }
 .product-wrap-product {
     display: flex;

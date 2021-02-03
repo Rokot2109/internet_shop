@@ -1696,16 +1696,34 @@ input:disabled + label:before {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .buttonstyle-product:hover {
   background: #F16D7F url(../img/basket_white.svg) no-repeat left;
   background-position: 24px;
   color: #FFFFFF;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+}
+
+.position-product-filter {
+  left: 45px;
+}
+
+.label-chekbox .checkbox-id13 {
+  color: red;
+}
+
+.label-chekbox .checkbox-id14 {
+  color: green;
+}
+
+.label-chekbox .checkbox-id15 {
+  color: black;
+}
+
+.label-chekbox .checkbox-id16 {
+  color: blue;
 }
 
 .product-wrap-product {
