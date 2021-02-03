@@ -12,13 +12,54 @@
 
 <body>
     <header class="header">
+        <div class="overlay">
+            <div class="filter-content-header">
+                <details open class="details-FILTER-header ">
+                    <summary class="details-FILTER-summary-header">MENU</summary>
+        <details class="filter-title-header">
+            <summary class="filter-title-summary-header man">MAN</summary>
+            <ul class="filter-list">
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Accessories</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Bags</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Denim</a></li>
+                <li class="filter-item-header padding-item-20px"><a href="#" class="filter-link">T-Shirts</a></li>
+            </ul>
+        </details>
+        <details class="filter-title-header">
+            <summary class="filter-title-summary-header woman">WOMAN</summary>
+            <ul class="filter-list">
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Accessories</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Jackets & Coats</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">Polos</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="#" class="filter-link">T-Shirts</a></li>
+                <li class="filter-item-header padding-item-20px"><a href="#" class="filter-link">Shirts</a></li>
+            </ul>
+        </details>
+        <details class="filter-title-header">
+            <summary class="filter-title-summary-header kids">KIDS</summary>
+            <ul class="filter-list">
+                <li class="filter-item-header padding-item-11px"><a href="" class="filter-link">Accessories</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="" class="filter-link">Jackets & Coats</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="" class="filter-link">Polos</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="" class="filter-link">T-Shirts</a></li>
+                <li class="filter-item-header padding-item-11px"><a href="" class="filter-link">Shirts</a></li>
+                <li class="filter-item-header padding-item-last-padding "><a href="" class="filter-link">Bags</a></li>
+            </ul>
+        </details>
+    </details>
+    <button class="menu-close-btn"><img class="menu-close-btn-img" src="img/buttonX.svg" alt="buttonX"></button>
+            </div>
+                
+                
+            </div>
+          </div>
         <div class="wrap header-wrap">
             <div class="logo">
                 <a href="index.html" class="logoimg"> <img src="img/logo.svg" alt="logo" /> </a>
                 <div class="search"> <img src="img/Forma1.svg" alt="search" /> </div>
             </div>
             <div class="account">
-                <div class="menuimg"> <a href=""><img src="img/Forma01.svg" alt="menuimg"></a> </div>
+                <button class="burger"><img src="img/Forma01.svg" alt="menuimg"></button>
                 <div class="accountimg"><a href="Registration.html"><img src="img/Forma02.svg" alt="accountimg"></a>  </div>
                 <div class="basketimg"><a href="cart.html"><img src="img/Forma03.svg" alt="basketimg"></a>  </div>
             </div>
@@ -100,5 +141,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector(".burger").onclick = function() {
+ document.querySelector(".overlay").classList.add("overlay-open");
+}
+
+document.querySelector(".menu-close-btn").onclick = function() {
+ document.querySelector(".overlay").classList.remove("overlay-open");
+}
+    </script>
 </body>
 </html>
