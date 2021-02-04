@@ -85,16 +85,10 @@ body {
     background-size: cover;
     display: none;
    justify-content:flex-end;
-   z-index: 100;
+   z-index: 150;
    
   }
-  .menu-overlay {
-    background-color: gold;
-    width: 232px;
-    padding: 20px;
-    position: absolute;
-    right: 0;
-  }
+  
   .overlay-open {
     display: flex;
   }
