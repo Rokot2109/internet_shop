@@ -6,6 +6,14 @@
 }
 
 /*убираем скролл */
+details summary ::-moz-details-marker {
+  display: none;
+}
+
+details, summary {
+  display: block;
+}
+
 body {
   margin: 0;
 }

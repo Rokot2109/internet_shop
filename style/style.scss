@@ -9,7 +9,12 @@
 //::-webkit-scrollbar {
 //   width: 0;
 //  }
+// убираем стрелочки фаерфокс детаилс
+details summary ::-moz-details-marker {display:none;}
 
+details, summary {
+    display: block;
+    }
 body {
     margin: 0;
 }
