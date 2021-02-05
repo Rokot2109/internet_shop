@@ -143,11 +143,6 @@ body {
   height: inherit;
 }
 
-.details-FILTER-header[open] {
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
-
 .details-FILTER-header[open] .details-FILTER-summary {
   color: #EF5B70;
 }
@@ -968,67 +963,7 @@ body {
   color: #FBFBFB;
 }
 
-.socialimgF {
-  width: 31.45px;
-  height: 32px;
-  background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.socialimgI {
-  width: 31.45px;
-  height: 32px;
-  background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.socialimgP {
-  width: 31.45px;
-  height: 32px;
-  background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.socialimgT {
+.socialimg {
   width: 31.45px;
   height: 32px;
   background: #FFFFFF;
@@ -1059,10 +994,20 @@ body {
           justify-content: space-between;
 }
 
-.sosialhover:hover {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  background: #0e9280;
+.svg-social {
+  fill: #000;
+}
+
+.socialimg:hover .a-social {
+  color: #fff;
+}
+
+.socialimg:hover {
+  background: #F16D7F;
+}
+
+.a-social {
+  color: #000;
 }
 
 /* Начало стилей каталога ! */
@@ -1187,6 +1132,9 @@ a {
 }
 
 .filter-title-summary {
+  position: relative;
+  width: 325px;
+  border-left: 5px solid #EF5B70;
   padding-left: 11px;
   padding-bottom: 11px;
   padding-top: 9px;
@@ -1197,10 +1145,19 @@ a {
   line-height: 17px;
   /* identical to box height */
   background: #FFFFFF;
-  border-left: 5px solid #EF5B70;
   color: #6F6E6E;
   outline: none;
   cursor: pointer;
+}
+
+.filter-title-summary:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #EBEBEB;
 }
 
 .filter-title[open] .filter-title-summary {

@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box;
 }
+// ховер для explorer
+//* {behavior:url("../ie6hover.htc")}
 /*убираем скролл */
 //::-webkit-scrollbar {
 //   width: 0;
@@ -118,12 +120,9 @@ body {
 .details-FILTER-header {
     box-sizing: border-box;
     width: 232px;
-    height: inherit;
-   
+    height: inherit;  
 }
-.details-FILTER-header[open] {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
+
 .details-FILTER-header[open] .details-FILTER-summary {
     color: #EF5B70;
 }
@@ -766,7 +765,7 @@ body {
     color: #FBFBFB;
 }
 
-.socialimgF {
+.socialimg {
     width: 31.45px;
     height: 32px;
     background: #FFFFFF;
@@ -777,38 +776,7 @@ body {
     user-select: none;
 }
 
-.socialimgI {
-    width: 31.45px;
-    height: 32px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
-}
 
-.socialimgP {
-    width: 31.45px;
-    height: 32px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
-}
-
-.socialimgT {
-    width: 31.45px;
-    height: 32px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
-}
 
 .socialimgdiv {
     width: 147.66px;
@@ -817,11 +785,19 @@ body {
     justify-content: space-between;
 }
 
-.sosialhover:hover {
-    filter: invert(1);
-    background: #0e9280;
+.svg-social {
+    fill: #000;
+}
+.socialimg:hover .a-social {
+    color: #fff;
+}
+.socialimg:hover {
+    background: #F16D7F;
 }
 
+.a-social {
+    color: #000;
+}
 
 /* Начало стилей каталога ! */
 
@@ -933,6 +909,9 @@ a {
 
 
 .filter-title-summary {
+    position: relative;
+    width: 325px;
+    border-left: 5px solid #EF5B70;
     padding-left: 11px;
     padding-bottom: 11px;
     padding-top: 9px;
@@ -943,10 +922,18 @@ a {
     line-height: 17px;
 /* identical to box height */
     background: #FFFFFF;
-    border-left: 5px solid #EF5B70;
     color: #6F6E6E;
     outline: none;
     cursor: pointer;
+}
+.filter-title-summary:after {
+    content:"";
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            width:100%;
+            height:1px;
+            background: #EBEBEB;
 }
 .filter-title[open] .filter-title-summary{
     padding-left: 11px;
