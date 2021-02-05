@@ -490,6 +490,7 @@ body {
 }
 
 .productsimg-flex {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +530,7 @@ body {
 }
 
 .overlay-btn {
+  top: 0px;
   position: absolute;
   width: 360px;
   height: 420px;

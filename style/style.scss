@@ -403,6 +403,7 @@ body {
 }
 
 .productsimg-flex {
+    position: relative;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
@@ -432,6 +433,7 @@ body {
       padding-left: 31.05px;
   }
   .overlay-btn {
+    top: 0px;  
     position: absolute;
     width: 360px;
     height: 420px;
