@@ -2241,6 +2241,7 @@ input:disabled + label:before {
   background: #FFFFFF url(../img/arrow_pink.svg) no-repeat right;
   background-position: 121px;
   margin-bottom: 96px;
+  text-align: left;
 }
 
 .Registration .buttonstyle-product:hover {

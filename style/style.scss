@@ -1374,6 +1374,7 @@ input[type="checkbox"] {
     cursor: pointer;
     user-select: none;
     transition: 0.5s;
+    
      
     
 }
@@ -1801,6 +1802,7 @@ input[type="checkbox"] {
     background:  #FFFFFF url(../img/arrow_pink.svg) no-repeat right;
     background-position: 121px;
     margin-bottom: 96px;
+    text-align: left;
 }
 .Registration .buttonstyle-product:hover {
     background: #F16D7F url(../img/arrow_white.svg) no-repeat right;
