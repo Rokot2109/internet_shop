@@ -1369,7 +1369,7 @@ input[type="checkbox"] {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19pbuttonstylex;
+    line-height: 19px;
     background: #FFFFFF url(../img/basket.svg)no-repeat left;
     background-position: 24px;
     border: 1px solid #FF6A6A;
@@ -1639,6 +1639,14 @@ input[type="checkbox"] {
     transform: scale(1.1);
     background: #cbcecd;
 }
+.first_id-cart1::placeholder  {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
 
  #first_id-cart::placeholder  {
     font-family: Lato;
@@ -1657,6 +1665,16 @@ input[type="checkbox"] {
     /* identical to box height */
     color: #222222;
 }
+#second_id-cart1::placeholder  {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #222222;
+}
+
 .chekout .buttonstyle {
     width: 273px; 
     outline: none;  

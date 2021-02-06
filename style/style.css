@@ -1652,7 +1652,7 @@ input:disabled + label:before {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19pbuttonstylex;
+  line-height: 19px;
   background: #FFFFFF url(../img/basket.svg) no-repeat left;
   background-position: 24px;
   border: 1px solid #FF6A6A;
@@ -1983,6 +1983,42 @@ input:disabled + label:before {
   background: #cbcecd;
 }
 
+.first_id-cart1::-webkit-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.first_id-cart1:-ms-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.first_id-cart1::-ms-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.first_id-cart1::placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
 #first_id-cart::-webkit-input-placeholder {
   font-family: Lato;
   font-style: normal;
@@ -2050,6 +2086,46 @@ input:disabled + label:before {
 }
 
 #second_id-cart::placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #222222;
+}
+
+#second_id-cart1::-webkit-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #222222;
+}
+
+#second_id-cart1:-ms-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #222222;
+}
+
+#second_id-cart1::-ms-input-placeholder {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+  color: #222222;
+}
+
+#second_id-cart1::placeholder {
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
