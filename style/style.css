@@ -1564,6 +1564,10 @@ input:disabled + label:before {
   font-size: 21.7px;
 }
 
+.arrow-a:hover {
+  color: #F16D7F;
+}
+
 .card-info {
   height: 601px;
   margin-bottom: 64px;
