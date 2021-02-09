@@ -2649,6 +2649,77 @@ input:disabled + label:before {
     margin-top: 64px;
     margin-bottom: 48px;
   }
+  .goods_details {
+    width: 354px;
+    height: 337px;
+  }
+  .Registration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .Registration-block1 {
+    margin-top: 40px;
+  }
+  .Registration-block2 {
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+  .Registration .buttonstyle-product {
+    width: 167px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 29px;
+    background: #FFFFFF url(../img/arrow_pink.svg) no-repeat right;
+    background-position: 121px;
+    margin-bottom: 96px;
+    text-align: left;
+  }
+  .Registration .buttonstyle-product:hover {
+    background: #F16D7F url(../img/arrow_white.svg) no-repeat right;
+    background-position: 121px;
+  }
+  .goods_details p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  .goods_details p:nth-child(2) {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+  .goods_details ul {
+    padding-left: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .goods_details ul li {
+    margin-bottom: 16px;
+  }
+  .goods_details ul li:nth-child(5) {
+    margin-bottom: 0;
+  }
+  .goods_details-ul {
+    padding-top: 10px;
+  }
+  .goods_details li::marker {
+    content: url(../img/galka_ul.svg);
+  }
+  .goods_details li {
+    padding-left: 22px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -2714,6 +2785,45 @@ input:disabled + label:before {
   }
   .wrap {
     width: 343px;
+  }
+  .goods_details {
+    width: 354px;
+    height: 337px;
+  }
+  .Registration {
+    margin: 0;
+    margin-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Registration-block1 {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .Registration-block2 {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .navigation-menu {
+    height: 148px;
+    background: #F8F3F4;
+  }
+  .navigation-menu-wrap {
+    height: 148px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .categories {
     height: 951px;
