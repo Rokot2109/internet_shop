@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+}
+
 /*убираем скролл */
 details summary ::-moz-details-marker {
   display: none;
@@ -81,6 +88,7 @@ body {
 }
 
 .account {
+  position: relative;
   height: 37px;
   width: 169px;
   display: -webkit-box;
@@ -92,6 +100,27 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.basket-item-quan {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 19px;
+  width: 19px;
+  background-color: #F16D7F;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.basket-item-quan-span {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
 }
 
 .burger {
@@ -256,6 +285,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-right: 10px;
 }
 
 .promo {
@@ -335,7 +365,7 @@ body {
 }
 
 .categoriesimg1 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(../img/1-forwomen.png);
   display: -webkit-box;
@@ -366,7 +396,7 @@ body {
 }
 
 .categoriesimg2 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(../img/2-formen.png);
   display: -webkit-box;
@@ -392,7 +422,7 @@ body {
 }
 
 .categoriesimg3 {
-  width: 360px;
+  width: 32%;
   height: 260px;
   background-image: url(../img/3-forkids.png);
   display: -webkit-box;
@@ -420,7 +450,7 @@ body {
 .categoriesimg4 {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 1140px;
+  width: 100%;
   height: 180px;
   background-image: url(../img/4-ACCESORIES.png);
   display: -webkit-box;
@@ -2578,11 +2608,21 @@ input:disabled + label:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .advantages-wrap .advantages1 {
+    margin-top: 48.16px;
+  }
+  .advantages-wrap .advantages2 {
+    margin-top: 48.37px;
+  }
+  .advantages-wrap .advantages3 {
+    margin-top: 48.47px;
   }
   .feedback {
     height: 693px;
@@ -2598,12 +2638,307 @@ input:disabled + label:before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .feedback-wrap .feedback_comments {
+    margin-top: 64px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 395px) {
+  .promo {
+    height: 363px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #F1E4E6;
+    outline: 1px solid red;
+  }
+  .promo-image {
+    display: none;
+  }
+  .promo-header {
+    max-width: 100%;
+  }
+  .promo-header-box {
+    margin-left: 56px;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+  }
+  .promo-h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    color: #222222;
+    margin: 0;
+  }
+  .promo-p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .account .accountimg {
+    display: none;
+  }
+  .account .basketimg {
+    display: none;
+  }
+  .account .basket-item-quan {
+    display: none;
+  }
+  .account {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrap {
+    width: 343px;
+  }
+  .categories {
+    height: 951px;
+    margin-top: 64px;
+  }
+  .categoriesimg1 {
+    margin-bottom: 20px;
+    width: 343px;
+    height: 247px;
+    background-image: url(../img/Frame3_women_375.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .categoriesimg2 {
+    margin-bottom: 20px;
+    width: 343px;
+    height: 247px;
+    background-image: url(../img/Frame4_men_375.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .categoriesimg3 {
+    margin-bottom: 20px;
+    width: 343px;
+    height: 247px;
+    background-image: url(../img/Frame5_kids_375.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .categoriesimg4 {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 343px;
+    height: 111px;
+    background-image: url(../img/Group16_acc_375.png);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .Fetured-Items {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 3.3px;
+    color: #222222;
+  }
+  .Shop {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    margin: 0;
+    margin-bottom: 64.7px;
+    color: #9F9F9F;
+    text-align: center;
+  }
+  .product-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 3556px;
+  }
+  .button {
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 96px;
+  }
+  .advantages {
+    background: #222224;
+    height: 610px;
+  }
+  .advantages-wrap {
+    height: 610px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-wrap .advantages1 {
+    margin-top: 48px;
+  }
+  .advantages-wrap .advantages2 {
+    margin-top: 46.73px;
+  }
+  .advantages-wrap .advantages3 {
+    margin-top: 46.83px;
+  }
+  .feedback {
+    height: 550px;
+    background: #FBFBFB url(../img/Frame7.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+  .feedback-wrap {
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback-wrap .feedback_comments {
+    margin-top: 64px;
+    margin-bottom: 59px;
+  }
+  .footer {
+    height: 143px;
+  }
+  .footer-wrap {
+    height: 143px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-p {
+    margin: 0;
+    margin-bottom: 9px;
+  }
+  .socialimgdiv {
+    margin-top: 43px;
   }
 }
 /*# sourceMappingURL=style.css.map */
