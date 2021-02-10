@@ -2134,7 +2134,43 @@ input[type="checkbox"] {
     background-position: 121px;
     
     }
+ //конец регистрация
+ //начало карточка 
 
+ .cart-item1 {
+     margin-top: 59px;
+     order: 1;
+     width: 734px;
+ }
+     
+ .cart-item2 {
+     order: 2;
+     width: 734px;
+     margin-bottom: 62px;
+ }
+.button-cart {
+    order: 3;
+    margin-top: 0px;
+    width: 508px;
+    margin-left: 120px;
+    margin-bottom: 0;
+    
+}
+.adress-cart {
+    order: 4;
+    margin-top: 64px;
+    margin-bottom: 128px;
+}
+.chekout {
+    margin-top: 103px;
+    margin-bottom: 0;
+    order: 5;
+}
+.chekout .button {
+    margin: 0;
+}
+
+// конец карточка
     .goods_details p {
     font-family: Lato;
     font-style: normal;
@@ -2237,7 +2273,7 @@ input[type="checkbox"] {
 
     .wrap {
         //padding: 0 16px;
-		width: 375px - 16px * 2;
+		width: 375px - 9px * 2;
 	}
 
     // начало регистрация
@@ -2275,6 +2311,159 @@ input[type="checkbox"] {
         }
         
     // конец регистрация
+    // начало карточка
+    .cart-item1 {
+        margin-top: 39px;
+        order: 1;
+        width: 358px;
+        height: 188px;
+    }
+        
+    .cart-item2 {
+        order: 2;
+        width: 358px;
+        height: 188px;
+        margin-bottom: 30px;
+    }
+    .cart-p {
+        margin-left: 17.02px;
+        margin-top: 13.52px;
+    }
+    
+    
+    .cart-p p {
+        margin: 0;
+    }
+    .cart-item1 button {
+        display: flex;
+        align-self: center;
+        border: none;
+        cursor: pointer;
+        background: none;
+        position: absolute;
+        right: 22px;
+        top: 28px;
+    }
+    .cart-item2 button {
+        display: flex;
+        align-self: center;
+        border: none;
+        cursor: pointer;
+        background: none;
+        position: absolute;
+        right: 22px;
+        top: 28px;
+    }
+    .cart-p p:first-child {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 25.85px;
+        color: #222222;
+    }
+    .cart-p p:nth-child(2) {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+        color: #575757;
+    }
+    .cart-p p:nth-child(3) {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 3px;
+        color: #575757;
+        
+    }
+    .cart-p p:nth-child(4) {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 4px;
+        color: #575757;
+        
+    }
+    
+    .cart-p p:nth-child(5) {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #575757;
+        display: inline-block;
+    }
+    .cart-item1 button {
+        right: 2.08px;
+        top: 17.2px;
+        
+        
+    }
+    .cart-item1 button img {
+        width: 9.88px;
+        height: 11.06px;
+
+    }
+
+    .cart-item2 button {
+        right: 2.08px;
+        top: 17.2px;
+    }
+    .cart-item2 button img {
+        width: 9.88px;
+        height: 11.06px;
+
+    }
+
+   .button-cart {
+       order: 3;
+       margin-top: 0px;
+       width: 359px;
+       height: 33px;
+       margin-left: 0px;
+       margin-bottom: 0;
+       
+   }
+   .button-cart button {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #000000;
+    background: none;
+    border: 1px solid #A4A4A4;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 18px;
+    padding-right: 17.89px;
+    outline: none;
+    transition: 0.4s;
+   }
+   .adress-cart {
+       order: 4;
+       margin-top: 48px;
+       margin-bottom: 48px;
+   }
+   .chekout {
+       margin-top: 0px;
+       margin-bottom: 96px;
+       order: 5;
+   }
+   .chekout .button {
+       margin: 0;
+   }
+   // конец карточка
 
     .categories {
         height: 951px;
