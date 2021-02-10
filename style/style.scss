@@ -27,6 +27,7 @@ details, summary {
     }
 body {
     margin: 0;
+    //overflow-x: hidden;
 }
 
 .block {
@@ -2598,7 +2599,41 @@ input[type="checkbox"] {
         -o-background-size: cover;
         background-size: cover;
     }
+ .feedback_sub {
+     width: 341px;
+     height: 123.08px;
+     justify-content: flex-start;
+ }
+ .feedback_sub-h1 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 153.2%;
+    /* or 37px */   
+    text-align: center; 
+    color: #222224;
     
+    
+ }
+.feedback_sub-p{
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 153.2%;
+/* or 21px */
+text-align: center;
+color: #222224;
+margin-bottom: 22.15px;
+
+
+} 
+
+.email_sub {
+    margin-top: 0;
+    width: 341px;
+}
     .feedback-wrap {
         height: 550px;
         display: flex;
