@@ -1274,23 +1274,32 @@ input[type="checkbox"] {
 .slider-menu {
     height: 777px;
     background: #F7F7F7;
-    position: relative;
+	text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center;
-       
+         
+}
+.slider-menu-img {
+    align-self: flex-start;
 }
 
 .wrap-slider {
     
     height: 777px;
     display: flex;
-    justify-content: center;       
+    justify-content: center;
+    position: relative;       
 }
 
 .arrow {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+    
     
   }
 
@@ -1317,22 +1326,18 @@ input[type="checkbox"] {
     color: #F16D7F;
 }
 
-.card-info {
-    height: 601px;
-    margin-bottom: 64px;
-
-}
 
 .card-info-wrap {
-    position: absolute;
     margin-top: -64px;
+    position: relative;
     height: 601px;
     background: #FFFFFF;
     outline: 1px solid #EAEAEA;
+    margin-bottom: 128px;
 
 }
 .card-info-wrap p:nth-child(1){
-    margin-top: 64.54px;
+    padding-top: 64.54px;
     margin-bottom: 27.23px;
     font-family: Lato;
     font-style: normal;
@@ -1896,14 +1901,12 @@ input[type="checkbox"] {
 // Начало медиа запросы главная 
 @media (max-width: 1160px) {
 
-
-
     .promo {
         height: 367.57px;
         display: flex;
         align-items: center;
         background: #F1E4E6;
-        outline: 1px solid red;
+    
     
     }
 
@@ -2172,6 +2175,38 @@ input[type="checkbox"] {
 }
 
 // конец карточка
+// начало продукты 
+.slider-menu {
+    height: 624px;
+    background: #F7F7F7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+       
+}
+
+.wrap-slider {
+    
+    height: 624px;
+    display: flex;
+    justify-content: center;       
+}
+.slider img {
+    width: 466px;
+    height: 565px;
+}
+.card-info-wrap {
+    position: absolute;
+    margin-top: 0px;
+    height: 601px;
+    background: #FFFFFF;
+    outline: 1px solid #EAEAEA;
+    
+    
+}
+
+
+
     .goods_details p {
     font-family: Lato;
     font-style: normal;
@@ -2222,7 +2257,7 @@ input[type="checkbox"] {
         display: flex;
         align-items: center;
         background: #F1E4E6;
-        outline: 1px solid red;
+        
     }
     .promo-image {
         display: none;
@@ -2274,8 +2309,11 @@ input[type="checkbox"] {
 
     .wrap {
         //padding: 0 16px;
-		width: 375px - 9px * 2;
+		width: 375px - 16px * 2;
 	}
+    .products .wrap {
+        width: 375px - 8px * 2;
+    }
 
     // начало регистрация
     .goods_details {
@@ -2663,3 +2701,4 @@ margin-bottom: 22.15px;
         margin-top: 43px;
     }
 }
+

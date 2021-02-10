@@ -1543,13 +1543,21 @@ input:disabled + label:before {
 .slider-menu {
   height: 777px;
   background: #F7F7F7;
-  position: relative;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.slider-menu-img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .wrap-slider {
@@ -1560,13 +1568,14 @@ input:disabled + label:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .arrow {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 .left {
@@ -1598,21 +1607,17 @@ input:disabled + label:before {
   color: #F16D7F;
 }
 
-.card-info {
-  height: 601px;
-  margin-bottom: 64px;
-}
-
 .card-info-wrap {
-  position: absolute;
   margin-top: -64px;
+  position: relative;
   height: 601px;
   background: #FFFFFF;
   outline: 1px solid #EAEAEA;
+  margin-bottom: 128px;
 }
 
 .card-info-wrap p:nth-child(1) {
-  margin-top: 64.54px;
+  padding-top: 64.54px;
   margin-bottom: 27.23px;
   font-family: Lato;
   font-style: normal;
@@ -2399,7 +2404,6 @@ input:disabled + label:before {
         -ms-flex-align: center;
             align-items: center;
     background: #F1E4E6;
-    outline: 1px solid red;
   }
   .wrap {
     width: 736px;
@@ -2723,6 +2727,37 @@ input:disabled + label:before {
   .chekout .button {
     margin: 0;
   }
+  .slider-menu {
+    height: 624px;
+    background: #F7F7F7;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrap-slider {
+    height: 624px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider img {
+    width: 466px;
+    height: 565px;
+  }
+  .card-info-wrap {
+    position: absolute;
+    margin-top: 0px;
+    height: 601px;
+    background: #FFFFFF;
+    outline: 1px solid #EAEAEA;
+  }
   .goods_details p {
     font-family: Lato;
     font-style: normal;
@@ -2772,7 +2807,6 @@ input:disabled + label:before {
         -ms-flex-align: center;
             align-items: center;
     background: #F1E4E6;
-    outline: 1px solid red;
   }
   .promo-image {
     display: none;
@@ -2824,7 +2858,10 @@ input:disabled + label:before {
             align-items: center;
   }
   .wrap {
-    width: 357px;
+    width: 343px;
+  }
+  .products .wrap {
+    width: 359px;
   }
   .goods_details {
     width: 354px;
