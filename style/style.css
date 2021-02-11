@@ -2752,11 +2752,20 @@ input:disabled + label:before {
     height: 565px;
   }
   .card-info-wrap {
-    position: absolute;
     margin-top: 0px;
     height: 601px;
     background: #FFFFFF;
     outline: 1px solid #EAEAEA;
+    margin-bottom: 128px;
+  }
+  .card-info .wrap {
+    width: 768px;
+  }
+  .productsimg-flex {
+    margin: 0;
+  }
+  .order3 {
+    display: none;
   }
   .goods_details p {
     font-family: Lato;
