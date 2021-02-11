@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Catalog</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -68,7 +68,7 @@
             </div>
         </div>
     </header>
-    <section class="menu">
+    <section class="menu-catalog">
         <nav>
             <div class="navigation-menu">
                 <div class="wrap navigation-menu-wrap ">
@@ -82,6 +82,7 @@
             </div>
         </nav>
     </section>
+    <div class="nav-menu-nowrap">
     <nav class="nav-menu wrap">
         
             <div class="filter-content">
@@ -140,7 +141,7 @@
             </div>
                     
 
-        <section class="tovar-filter wrap  ">
+        <section class="tovar-filter wrap">
             <details class="tovar-filter-details">
                 <summary class="tovar-filter-summary">TRENDING NOW</summary>
                 <div class="tovar-filter-spisok">
@@ -163,7 +164,7 @@
     </div>
                 
             </details>
-            <details class="tovar-filter-details">
+            <details class="tovar-filter-details left">
                 <summary class="tovar-filter-summary">SIZE</summary>
                 <div class="tovar-filter-spisok-size">
                     <div class="label-chekbox">
@@ -184,7 +185,7 @@
     </div>
     </div>
             </details>
-            <details class="tovar-filter-details">
+            <details class="tovar-filter-details left">
                 <summary class="tovar-filter-summary">PRICE</summary>
                 <div class="tovar-filter-spisok-price">
                     <div class="label-chekbox">
@@ -207,6 +208,7 @@
             </details>
         </section>
     </nav>
+</div>
     <section class="products">
         <div class="wrap product-wrap-catalog">
             <div class="productsimg-flex">
@@ -355,7 +357,8 @@
             </div>
         </div>
     </section>
-    <nav class="pagination-nav wrap">
+    <div class="wrap">
+    <nav class="pagination-nav ">
         <ul class="pagination">
             <li class="pagination-item-nav "> <a href="#">❮</a> </li>
             <li class="pagination-item pg-active"> <a href="#">1</a> </li>
@@ -367,6 +370,7 @@
             <li class="pagination-item-nav"> <a href="#">❯</a> </li>
         </ul>
     </nav>
+</div>
     <section class="advantages">
         <div class="wrap advantages-wrap">
             <div class="advantages1"> <img src="./img/Forma_advan1.png" alt="advantages">

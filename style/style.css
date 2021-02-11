@@ -1491,6 +1491,7 @@ input:disabled + label:before {
 }
 
 .pagination-nav {
+  margin: 0 auto;
   border-radius: 3px;
   border: solid 1px #ececec;
   width: 284px;
@@ -2758,6 +2759,11 @@ input:disabled + label:before {
     outline: 1px solid #EAEAEA;
     margin-bottom: 128px;
   }
+  .card-info .card-info-wrap .tovar-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .card-info .wrap {
     width: 768px;
   }
@@ -2766,6 +2772,38 @@ input:disabled + label:before {
   }
   .order3 {
     display: none;
+  }
+  .nav-menu {
+    position: relative;
+    margin-top: 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+    z-index: 100;
+  }
+  .product-wrap-catalog {
+    height: auto;
+  }
+  .product-wrap-catalog .productsimg-flex:nth-child(3) {
+    display: none;
+  }
+  .product-wrap-catalog .productsimg-flex {
+    margin-bottom: 16px;
+  }
+  .pagination-nav {
+    margin: 0 auto;
+    border-radius: 3px;
+    border: solid 1px #ececec;
+    width: 284px;
+    margin-bottom: 63px;
+    margin-top: 24px;
+    padding: 0;
   }
   .goods_details p {
     font-family: Lato;
@@ -3169,6 +3207,15 @@ input:disabled + label:before {
     width: 175px;
     border: 1px solid #EAEAEA;
   }
+  .card-info-wrap .tovar-filter-details:nth-child(2) .tovar-filter-spisok-size {
+    left: 30px;
+  }
+  .card-info-wrap .tovar-filter-details:nth-child(1) .tovar-filter-spisok-size {
+    left: 5px;
+  }
+  .card-info-wrap .tovar-filter-details:nth-child(3) .tovar-filter-spisok-size {
+    left: 15px;
+  }
   .tovar-filter-summary {
     font-family: Lato;
     font-style: normal;
@@ -3184,18 +3231,18 @@ input:disabled + label:before {
     text-align: center;
     margin-top: 64.09px;
   }
-  .products .productsimg-flex:nth-child(1) {
+  .products-order .products .productsimg-flex:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .products .productsimg-flex:nth-child(2) {
+  .products-order .products .productsimg-flex:nth-child(2) {
     display: none;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .products .productsimg-flex:nth-child(3) {
+  .products-order .products .productsimg-flex:nth-child(3) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3216,6 +3263,154 @@ input:disabled + label:before {
             justify-content: space-between;
     height: 1157px;
     margin-bottom: 64px;
+  }
+  .menu-catalog .navigation-menu {
+    height: 148px;
+    background: #F8F3F4;
+  }
+  .menu-catalog .navigation-menu-wrap {
+    height: 148px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .menu-catalog .navigation-menu-wrap .navigation-menu-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-catalog .navigation-menu-wrap .navigation-menu-p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #F16D7F;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .nav-menu {
+    position: relative;
+    margin-top: 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    width: 260px;
+    z-index: 100;
+  }
+  .filter-content {
+    position: absolute;
+    background: #FFFFFF;
+    width: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .details-FILTER {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-menu-nowrap .wrap {
+    width: 359px;
+  }
+  .details-FILTER[open] {
+    padding-left: 16px;
+    -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+  .details-FILTER[open] .details-FILTER-summary {
+    color: #EF5B70;
+  }
+  .details-FILTER[open] .details-FILTER-summary:after {
+    content: url(../img/filter_pink.svg);
+    padding-left: 11px;
+  }
+  .details-FILTER-summary {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 37px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .tovar-filter {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 310px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .details-FILTER-summary:after {
+    content: url(../img/filter.svg);
+    padding: 0;
+    margin: 0;
+  }
+  .nav-menu-nowrap .tovar-filter-spisok {
+    left: -10px;
+  }
+  .nav-menu-nowrap .tovar-filter-spisok-size {
+    left: -5px;
+  }
+  .nav-menu-nowrap .tovar-filter-spisok-price {
+    left: -19px;
+    width: 70px;
+  }
+  .label-filter {
+    color: #000;
+    cursor: default;
+    font-weight: normal;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    color: #6F6E6E;
+    padding: 0;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
   }
   .categories {
     height: 951px;
