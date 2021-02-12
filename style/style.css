@@ -5,7 +5,8 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,7 +18,8 @@ details summary ::-moz-details-marker {
   display: none;
 }
 
-details, summary {
+details,
+summary {
   display: block;
 }
 
@@ -833,6 +835,7 @@ body {
   height: 448px;
   background: #FBFBFB url(../img/Frame7.png) no-repeat center center fixed;
   background-size: cover;
+  background-position: left bottom;
 }
 
 .feedback-wrap {
@@ -2844,7 +2847,7 @@ input:disabled + label:before {
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 750px) {
   .promo {
     height: 363px;
     display: -webkit-box;
@@ -3596,6 +3599,7 @@ input:disabled + label:before {
     height: 550px;
     background: #FBFBFB url(../img/Frame7.png) no-repeat center center fixed;
     background-size: cover;
+    background-position: left bottom;
   }
   .feedback_sub {
     width: 341px;
