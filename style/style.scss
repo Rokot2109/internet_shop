@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    flex-grow: 1;
+}
+
 //img {
 //    width: 100%;
 
@@ -688,7 +692,7 @@ body {
     -moz-background-size   : cover;
     -o-background-size     : cover;
     background-size        : cover;
-    background-position: left bottom;
+    background-position    : left bottom;
 }
 
 .feedback-wrap {
@@ -1730,6 +1734,7 @@ input:disabled+label:before {
     padding-top   : 13px;
     padding-bottom: 16px;
     padding-left  : 17.24px;
+    padding-right : 17.24px;
     height        : 45px;
     border        : 1px solid #A4A4A4;
     outline       : none;
@@ -1739,6 +1744,7 @@ input:disabled+label:before {
     padding-top   : 13px;
     padding-bottom: 16px;
     padding-left  : 17.24px;
+    padding-right : 17.24px;
     height        : 45px;
     border        : 1px solid #A4A4A4;
     outline       : none;
@@ -3164,7 +3170,7 @@ input:disabled+label:before {
         -moz-background-size   : cover;
         -o-background-size     : cover;
         background-size        : cover;
-        background-position: left bottom;
+        background-position    : left bottom;
     }
 
     .feedback_sub {
